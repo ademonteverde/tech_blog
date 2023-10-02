@@ -1,0 +1,338 @@
+body {
+  background-color: #D9EAD3;
+  margin: 0;
+}
+
+header {
+  background-color: #231010;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+header ul {
+  display: flex;
+  list-style-type: none;
+}
+
+header li {
+  padding: 0;
+}
+
+header a {
+  color: #D9EAD3;
+  text-decoration: none;
+  padding-right: 30px;
+}
+
+header a:hover,
+header a:active {
+  color: #D9EAD3;
+}
+
+.title-container {
+  padding-left: 40px;
+  padding-bottom: 10px;
+}
+
+#page-title {
+  display: inline-block;
+  background-color: #D9EAD3;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 0px #A7A7A7;
+}
+
+#page-title h1 {
+  margin: 0;
+  color: #231010;
+}
+
+.accordion-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+}
+
+.accordion {
+  width: 100%;
+  padding: 0;
+  margin: 10px;
+  border: 5px solid #231010;
+  background-color: #D9EAD3;
+}
+
+.accordian-header, .login-title, .page-title {
+  background-color: #231010;
+  color: #D9EAD3;
+  margin: 0;
+  display: flex;
+}
+
+.accordian-header #title, .login-title {
+  font-size: medium;
+  padding: 10px 20px;
+}
+
+.accordian-header #posted-date {
+  font-size: smaller;
+  align-self: center;
+  text-align: right;
+  flex-grow: 1;
+  padding-right: 20px;
+}
+
+#blog-text p {
+  text-align: left;
+  padding: 10px 20px;
+}
+
+.panel,
+.comments-list,
+.comment {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.comments-list,
+.comment {
+  list-style-type: none;
+}
+
+.comment {
+  margin-bottom: 10px;
+  border: 5px solid #231010;
+  background-color: #D9EAD3;
+}
+
+.comment-header {
+  background-color: #231010;
+  padding: 10px;
+  /* margin: 10px; */
+}
+
+.comment li,
+.comment p {
+  padding: 15px 20px;
+}
+
+.comment p {
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+.new-comment, .form-input, #new-title, #new-content {
+  width: 90%;
+  box-sizing: border-box;
+  margin: 15px auto;
+  padding: 10px;
+  display: block;
+  resize: vertical;
+}
+
+.new-comment-form {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+  border: 5px solid #231010;
+  background-color: #D9EAD3;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+.new-comment-form p {
+  margin: 15px 0 0 0;
+  padding: 10px 50px;
+}
+
+.new-comment-header,
+.add-comment-btn {
+  background-color: #231010;
+  padding: 10px;
+}
+
+.add-comment-btn, 
+.signup,
+.btn,
+#create-post {
+  height: 90%;
+  width: 90%;
+  margin: 0 auto 10px;
+  padding: 10px;
+  display: block;
+  text-align: center;
+  background-color: #666666;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #666666;
+  border-radius: 5px;
+}
+
+.add-comment-btn:hover {
+  background-color: #D9EAD3;
+  color: #231010;
+}
+
+.dashboard-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  padding-top: 15px;
+}
+
+.dashboard-container li {
+  list-style-type: none;
+  width: 100%;
+  padding: 0;
+  margin: 10px;
+  background-color: #D9EAD3;
+  box-sizing: border-box;
+}
+
+.dashboard-blogs {
+  width: 100%;
+  padding: 10px;
+  background-color: #666666;
+  color: #D9EAD3;
+  border-radius: 10px;
+  display: flex;
+}
+
+.dashboard-blogs .dashboard-title {
+  padding-left: 20px;
+}
+
+.dashboard-blogs .dashboard-date {
+  text-align: right;
+  flex-grow: 1;
+  padding-right: 20px;
+}
+
+.login-card {
+  width: 80%;
+  max-width: 90%;
+  margin: 10px auto;
+  padding: 0;
+  border: 5px solid #231010;
+  background-color: #D9EAD3;
+  box-sizing: border-box;
+}
+
+.update-blog-container {
+  width: 100%;
+  max-width: 90%;
+  margin: 10px auto;
+  padding: 0;
+  border: 5px solid #231010;
+  background-color: #D9EAD3;
+  box-sizing: border-box;
+}
+
+#create-a-post {
+  background-color: #231010;
+  color: #D9EAD3;
+  margin: 0;
+  display: flex;
+  padding: 5px 10px;
+}
+
+.updated-title,
+.updated-content {
+  width: 90%;
+  box-sizing: border-box;
+  margin: 5px auto;
+  padding: 10px;
+  display: block;
+  resize: vertical;
+}
+
+.blog-form p {
+  margin: 15px 0 0 0;
+  padding: 0 55px;
+}
+
+.blog-form button {
+  height: 90%;
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px;
+  display: block;
+  text-align: center;
+  background-color: #666666;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #666666;
+  border-radius: 5px;
+}
+
+#new-post-btn {
+  display: block;
+  margin: 0 auto;
+  background-color: #231010;
+  color: #D9EAD3;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+#new-blog-form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  width: 100%;
+}
+
+
+#blog-form {
+  width: 100%;
+  text-align: left; 
+}
+
+#create-a-post {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#blog-form p {
+  margin: 10px 0;
+  padding-left: 50px;
+}
+
+
+
+#already-logged p {
+  text-align: center;
+}
+
+#new-blog-form {
+  width: 80%;
+  max-width: 90%;
+  margin: 10px auto;
+  padding: 0;
+  border: 5px solid #231010;
+  background-color: #D9EAD3;
+  box-sizing: border-box;
+}
+
+.new-title,
+.new-content {
+  width: 90%;
+  max-width: 90%; 
+  box-sizing: border-box;
+  margin: 15px auto;
+  padding: 10px;
+  display: block;
+  resize: vertical;
+}

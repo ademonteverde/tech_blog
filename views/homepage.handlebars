@@ -1,0 +1,66 @@
+<link rel="stylesheet" href="css/jass.css">
+
+<div class="accordion-container">
+    {{#each blogs}}
+    <button class="accordion">
+        <div class="accordian-header">
+            <div id="title">{{title}}</div>
+            <div id="posted-date">Posted By: {{user.username}} on {{formatDate datePosted}}</div>
+        </div>
+        <div id="blog-text">
+            <p>{{text}}</p>
+        </div>
+    </button>
+    <div class="panel">
+        <div>
+            <ul class="comments-list">
+                {{#each comments}}
+                <div class="comment">
+                    <div class="comment-header"></div>
+                    <li>{{text}}</li>
+                    <p>- {{username}}, {{this.datePosted}}</p>
+                </div>
+                {{/each}}
+            </ul>
+        </div>
+        <form class="new-comment-form">
+            <div class="new-comment-header"></div>
+            <p>Comment</p>
+            <textarea class="new-comment" maxlength="500" data-blogid={{id}}></textarea>
+            <button class="add-comment-btn" data-blogid={{id}} type="submit">Submit</button>
+        </form>
+    </div>
+    {{/each}}
+</div>
+
+{{#unless logged_in}}
+<div class="login-card">
+    <p class="login-title">Signup</p>
+    <form class="form signup-form">
+        <div class="form-group">
+            <input class="form-input" type="text" id="username-signup" placeholder="Username" />
+            <div class="border"></div>
+        </div>
+        <div class="form-group">
+
+            <input class="form-input" type="text" id="email-signup" placeholder="Email" />
+            <div class="border"></div>
+        </div>
+        <div class="form-group">
+
+            <input class="form-input" type="password" id="password-signup" placeholder="Password" />
+            <div class="border"></div>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary signup" type="submit">signup</button>
+        </div>
+    </form>
+</div>
+<div id="already-logged">
+    <p>Already have an account? <a href="/login">Log In</a></p>
+</div>
+{{/unless}}
+
+<script src="/js/homepage.js"></script>
+<script src="/js/signup.js"></script>
+<script src="/js/comment.js"></script>

@@ -1,0 +1,42 @@
+<div class="dashbaord-container">
+    {{#each blogs}}
+    <ul class="dashboard-container">
+        <li>
+            <button class="dashboard-blogs" data-blogid={{id}}>
+
+                <div class="dashboard-title">{{title}}</div>
+                <div class="dashboard-date">{{datePosted}}</div>
+            </button>
+            <div class="update-blog-container"> <!-- Wrap the update-blog-form in a container -->
+                <div class="update-blog-form" id="update-blog-form-{{id}}">
+                    <div id="create-a-post">Edit Post</div>
+
+                    <form class="blog-form">
+                        <p>Title</p>
+                        <textarea class="updated-title" maxlength="500">{{this.title}}</textarea>
+                        <p>Content</p>
+                        <textarea class="updated-content" maxlength="500">{{this.text}}</textarea>
+                        <button class="update-post" type="button" onclick="updateBlog({{id}})">Update</button>
+                        <button class="delete-post" type="button" onclick="deleteBlog({{id}})">Delete</button>
+                    </form>
+                </div>
+            </div>
+        </li>
+    </ul>
+    {{/each}}
+    <div id="new-blog-form">
+        <div id="create-a-post">Create a New Post</div>
+        <form id="blog-form">
+            <p>Title</p>
+            <textarea id="new-title" maxlength="500"></textarea>
+            <p>Content</p>
+            <textarea id="new-content" maxlength="500"></textarea>
+            <button id="create-post" type="button">Create</button>
+        </form>
+    </div>
+    <button id="new-post-btn" type="submit">New Post</button>
+</div>
+
+
+
+<script src="/js/dashboard.js"></script>
