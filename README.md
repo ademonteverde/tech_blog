@@ -28,6 +28,9 @@ Log out when you are done.
 
 [https://github.com/ademonteverde/tech_blog](https://github.com/ademonteverde/tech_blog)
 
+## Link to application:
+
+[https://mighty-wildwood-80550-0bb792e8a9a5.herokuapp.com/](https://mighty-wildwood-80550-0bb792e8a9a5.herokuapp.com/)
 ## License
 
 This project is licensed under the [MIT](https://github.com/ademonteverde/tech_blog/blob/main/LICENSE) License.
