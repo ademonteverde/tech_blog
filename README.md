@@ -30,7 +30,7 @@ Log out when you are done.
 
 ## Link to application:
 
-[https://mighty-wildwood-80550-0bb792e8a9a5.herokuapp.com/](https://mighty-wildwood-80550-0bb792e8a9a5.herokuapp.com/)
+[https://mysterious-caverns-95156-e3ed5a2dcccc.herokuapp.com/](https://mysterious-caverns-95156-e3ed5a2dcccc.herokuapp.com/)
 ## License
 
 This project is licensed under the [MIT](https://github.com/ademonteverde/tech_blog/blob/main/LICENSE) License.
